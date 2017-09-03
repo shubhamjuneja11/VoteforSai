@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Voteforsai",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "2.2",
+
+  "content_scripts": [
+    {
+        "run_at" :"document_end",
+        "matches": ["http://mycutebaby.in/contest/participant/?n=59a52b0b8ce8d"],
+        "js": ["script.js"]
+    }
+]
+}
